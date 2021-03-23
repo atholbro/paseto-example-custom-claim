@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'net.aholbrook.paseto.examples'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url  "https://dl.bintray.com/terl/lazysodium-maven" }
+}
+
+dependencies {
+    implementation 'net.aholbrook.paseto:meta:0.6.0'
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.12'
+}
